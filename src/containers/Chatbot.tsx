@@ -16,7 +16,7 @@ const ChatbotCard = () => {
 
   const handleSubmit = async () => {
     setLoading(true)
-    const response = await axios.post(`${import.meta.env.VITE_API_HOST}/chatbot`, {
+    const response = await axios.post(`${import.meta.env.VITE_API_HOST}chatbot`, {
       question: value,
     })
     setResponse(response.data)
